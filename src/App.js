@@ -29,8 +29,8 @@ function App() {
       </form>
       <hr />
       <ul>
-        {toDos.map((item) => (
-          <li>{item}</li>
+        {toDos.map((item, index) => (
+          <li key={index}>{item}</li>
         ))}
       </ul>
     </div>
